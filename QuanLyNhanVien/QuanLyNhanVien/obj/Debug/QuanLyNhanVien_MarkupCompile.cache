@@ -4,11 +4,16 @@
 winexe
 C#
 .cs
+<<<<<<< Updated upstream
 C:\Users\hp005\Source\Repos\QuanLyNhanVien\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\
+=======
+D:\NetFramework\QuanLyNhanVien\QuanLyNhanVien\QuanLyNhanVien\obj\Debug\
+>>>>>>> Stashed changes
 QuanLyNhanVien
 none
 false
 DEBUG;TRACE
+<<<<<<< Updated upstream
 C:\Users\hp005\Source\Repos\QuanLyNhanVien\QuanLyNhanVien\QuanLyNhanVien\App.xaml
 2-2043708473
 
@@ -17,4 +22,14 @@ C:\Users\hp005\Source\Repos\QuanLyNhanVien\QuanLyNhanVien\QuanLyNhanVien\App.xam
 dashboard.xaml;MainWindow.xaml;
 
 False
+=======
+D:\NetFramework\QuanLyNhanVien\QuanLyNhanVien\QuanLyNhanVien\App.xaml
+1219584333
+
+6-502434485
+13-1310406943
+MainWindow.xaml;
+
+True
+>>>>>>> Stashed changes
 

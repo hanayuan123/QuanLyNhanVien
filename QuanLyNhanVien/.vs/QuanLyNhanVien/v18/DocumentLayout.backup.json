@@ -1,0 +1,145 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\quanlynhanvien\\editform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|solutionrelative:quanlynhanvien\\editform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|d:\\netframework\\quanlynhanvien\\quanlynhanvien\\quanlynhanvien\\addform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|solutionrelative:quanlynhanvien\\addform.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\quanlynhanvien\\editform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|solutionrelative:quanlynhanvien\\editform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\quanlynhanvien\\addform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|solutionrelative:quanlynhanvien\\addform.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\quanlynhanvien\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|solutionrelative:quanlynhanvien\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\quanlynhanvien\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|solutionrelative:quanlynhanvien\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\quanlynhanvien\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0D787049-A505-45A9-A1AC-75743DA99996}|QuanLyNhanVien\\QuanLyNhanVien.csproj|solutionrelative:quanlynhanvien\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|QuanLyNhanVien||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EditForm.xaml.cs",
+              "DocumentMoniker": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\EditForm.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\EditForm.xaml.cs",
+              "ToolTip": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\EditForm.xaml.cs",
+              "RelativeToolTip": "QuanLyNhanVien\\EditForm.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T08:00:08.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AddForm.xaml.cs",
+              "DocumentMoniker": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\AddForm.xaml.cs",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\AddForm.xaml.cs",
+              "ToolTip": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\AddForm.xaml.cs",
+              "RelativeToolTip": "QuanLyNhanVien\\AddForm.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-29T07:56:54.074Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "App.config",
+              "DocumentMoniker": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\App.config",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\App.config",
+              "ToolTip": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\App.config",
+              "RelativeToolTip": "QuanLyNhanVien\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-01-29T07:53:21.212Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddForm.xaml",
+              "DocumentMoniker": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\AddForm.xaml",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\AddForm.xaml",
+              "ToolTip": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\AddForm.xaml",
+              "RelativeToolTip": "QuanLyNhanVien\\AddForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-29T07:53:07.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\App.xaml",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\App.xaml",
+              "ToolTip": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\App.xaml",
+              "RelativeToolTip": "QuanLyNhanVien\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-29T07:18:55.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\MainWindow.xaml",
+              "ToolTip": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\MainWindow.xaml",
+              "RelativeToolTip": "QuanLyNhanVien\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-29T07:18:30.284Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EditForm.xaml",
+              "DocumentMoniker": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\EditForm.xaml",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\EditForm.xaml",
+              "ToolTip": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\EditForm.xaml",
+              "RelativeToolTip": "QuanLyNhanVien\\EditForm.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-01-29T06:52:52.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuanLyNhanVien",
+              "DocumentMoniker": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien.csproj",
+              "RelativeDocumentMoniker": "QuanLyNhanVien\\QuanLyNhanVien.csproj",
+              "ToolTip": "D:\\NetFramework\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien\\QuanLyNhanVien.csproj",
+              "RelativeToolTip": "QuanLyNhanVien\\QuanLyNhanVien.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-29T06:52:11.822Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

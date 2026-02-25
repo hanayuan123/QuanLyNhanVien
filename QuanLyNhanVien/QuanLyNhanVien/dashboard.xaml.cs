@@ -54,13 +54,5 @@ namespace QuanLyNhanVien
         }
     }
 
-    public class NhanVien
-    {
-        public string MaNV { get; set; }
-        public string Ten { get; set; }
-        public int Tuoi { get; set; }
-        public string GioiTinh { get; set; }
-        public string Email { get; set; }
-        public string Sdt { get; set; }
-    }
+   
 }

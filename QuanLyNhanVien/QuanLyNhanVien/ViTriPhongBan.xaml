@@ -1,0 +1,34 @@
+﻿<Window x:Class="QuanLyNhanVien.ViTriPhongBan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Vị Trí Phòng Ban" Height="450" Width="700">
+
+    <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Mã vị trí:" Grid.Row="0"/>
+        <TextBox x:Name="txtMaVT" Grid.Row="0" Margin="92,0,368,4" Width="200"/>
+
+        <TextBlock Text="Tên vị trí:" Grid.Row="1"/>
+        <TextBox x:Name="txtTenVT" Grid.Row="1" Margin="92,5,368,5" Width="200"/>
+
+        <TextBlock Text="Mã phòng ban:" Grid.Row="2"/>
+        <TextBox x:Name="txtMaPB" Grid.Row="2" Margin="92,5,368,5" Width="200"/>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" Margin="0,10,0,10">
+            <Button Content="Thêm" Width="80" Margin="5"/>
+            <Button Content="Sửa" Width="80" Margin="5"/>
+            <Button Content="Xóa" Width="80" Margin="5"/>
+        </StackPanel>
+
+        <DataGrid x:Name="dgViTri" Grid.Row="4" AutoGenerateColumns="True"/>
+
+    </Grid>
+</Window>

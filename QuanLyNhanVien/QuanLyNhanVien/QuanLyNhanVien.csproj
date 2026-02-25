@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="QuanLyPhongBan.xaml.cs">
+      <DependentUpon>QuanLyPhongBan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan_Main.xaml.cs">
+      <DependentUpon>QuanLyTaiKhoan_Main.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan_Sua.xaml.cs">
+      <DependentUpon>QuanLyTaiKhoan_Sua.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuanLyTaiKhoan_Them.xaml.cs">
+      <DependentUpon>QuanLyTaiKhoan_Them.xaml</DependentUpon>
+    </Compile>
     <Page Include="Dangnhap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -95,6 +107,22 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="QuanLyPhongBan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="QuanLyTaiKhoan_Main.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QuanLyTaiKhoan_Sua.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QuanLyTaiKhoan_Them.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -122,5 +150,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

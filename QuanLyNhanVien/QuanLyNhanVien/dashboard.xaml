@@ -13,7 +13,7 @@
             </StatusBar>
 
             <Grid Margin="8">
-                <GroupBox Header="Thông tin nhân viên" Padding="6">
+                <GroupBox x:Name="pnlDanhSach" Header="Thông tin nhân viên" Padding="6">
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
@@ -69,7 +69,7 @@
                                 <DataGridTextColumn Header="tuổi"        Binding="{Binding Tuoi}" Width="*"/>
                                 <DataGridTextColumn Header="giới tính"   Binding="{Binding GioiTinh}" Width="*"/>
                                 <DataGridTextColumn Header="email"       Binding="{Binding Email}" Width="*"/>
-                                <DataGridTextColumn Header="sdt"         Binding="{Binding Sdt}"   Width="*"/>
+                                <DataGridTextColumn Header="sdt"         Binding="{Binding SDT}"   Width="*"/>
                             </DataGrid.Columns>
                         </DataGrid>
 
@@ -99,6 +99,7 @@
 
                     </Grid>
                 </GroupBox>
+                <ContentControl x:Name="contentArea" Visibility="Collapsed"/>
             </Grid>
 
         </DockPanel>

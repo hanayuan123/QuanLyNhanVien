@@ -8,44 +8,68 @@
         Title="QuanLyTaiKhoan_Main" Height="450" Width="800">
     <Grid Margin="10">
 
+        <!-- Chia làm 2 hàng: Nội dung + Nút -->
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!-- Danh sách tài khoản -->
-        <DataGrid x:Name="AccountDataGrid"
+        <!-- Hàng trên chia làm 2 cột -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- DataGrid bên trái -->
+            <DataGrid x:Name="AccountDataGrid"
                   AutoGenerateColumns="False"
-                  Grid.Row="0"
-                  Margin="0,0,0,10">
+                  SelectionMode="Single"
+                  SelectionUnit="FullRow"
+                  Grid.Column="0"
+                  Margin="0,0,10,0">
 
-            <DataGrid.Columns>
-                <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="100"/>
-                <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="*"/>
-                <DataGridTextColumn Header="Role" Binding="{Binding Role}" Width="150"/>
-            </DataGrid.Columns>
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="80"/>
+                    <DataGridTextColumn Header="Username" Binding="{Binding Username}" Width="*"/>
+                    <DataGridTextColumn Header="Role" Binding="{Binding Role}" Width="100"/>
+                    <DataGridTextColumn Header="Tên nhân viên" Binding="{Binding TenNhanVien}" Width="*"/>
+                </DataGrid.Columns>
 
-        </DataGrid>
+            </DataGrid>
 
-        <!-- Nút chức năng -->
+            <!-- VÙNG HIỂN THỊ FORM -->
+            <Border Grid.Column="1"
+                BorderBrush="Gray"
+                BorderThickness="1"
+                Padding="10">
+
+                <ContentControl x:Name="FormContent"/>
+
+            </Border>
+
+        </Grid>
+
+        <!-- Nút chức năng bên dưới -->
         <StackPanel Orientation="Horizontal"
-                    HorizontalAlignment="Right"
-                    Grid.Row="1">
+                HorizontalAlignment="Right"
+                Grid.Row="1"
+                Margin="0,10,0,0">
 
             <Button Content="Thêm"
-                    Width="100"
-                    Margin="5"
-                    Click="Add_Click"/>
+                Width="100"
+                Margin="5"
+                Click="Add_Click"/>
 
             <Button Content="Sửa"
-                    Width="100"
-                    Margin="5"
-                    Click="Edit_Click"/>
+                Width="100"
+                Margin="5"
+                Click="Edit_Click"/>
 
             <Button Content="Xóa"
-                    Width="100"
-                    Margin="5"
-                    Click="Delete_Click"/>
+                Width="100"
+                Margin="5"
+                Click="Delete_Click"/>
 
         </StackPanel>
 

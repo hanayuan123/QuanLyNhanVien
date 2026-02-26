@@ -17,8 +17,10 @@ namespace QuanLyNhanVien
     /// <summary>
     /// Interaction logic for QuanLyTaiKhoan_Them.xaml
     /// </summary>
-    public partial class QuanLyTaiKhoan_Them : Window
+    public partial class QuanLyTaiKhoan_Them : UserControl
     {
+        public event Action OnSaved;
+        private QLNhanVienEntities db = new QLNhanVienEntities();
         public QuanLyTaiKhoan_Them()
         {
             InitializeComponent();
@@ -26,7 +28,30 @@ namespace QuanLyNhanVien
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
+            // Kiểm tra dữ liệu cơ bản
+            if (string.IsNullOrWhiteSpace(UsernameBox.Text) ||
+                string.IsNullOrWhiteSpace(PasswordBox.Password))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
 
+            TaiKhoan tk = new TaiKhoan
+            {
+                Username = UsernameBox.Text,
+                Password = PasswordBox.Password,
+                Role = RoleBox.Text,
+                MaNV = ManvBox.Text
+            };
+
+            db.TaiKhoans.Add(tk);
+            db.SaveChanges();
+
+            MessageBox.Show("Thêm tài khoản thành công!");
+
+            MessageBox.Show("Thêm thành công!");
+
+            OnSaved?.Invoke();   // báo về Main
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿<Window x:Class="QuanLyNhanVien.ViTriPhongBan"
+﻿<Window x:Class="QuanLyNhanVien.ViTriPhongBanWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="Vị Trí Phòng Ban" Height="450" Width="700">

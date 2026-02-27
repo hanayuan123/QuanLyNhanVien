@@ -121,6 +121,9 @@
     <Compile Include="ViTriPhongBan.cs">
       <DependentUpon>NhanVienModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="ViTriPhongBan.xaml.cs">
+      <DependentUpon>ViTriPhongBan.xaml</DependentUpon>
+    </Compile>
     <Page Include="Dangnhap.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -170,6 +173,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="QuanLyTaiKhoan_Them.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViTriPhongBan.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

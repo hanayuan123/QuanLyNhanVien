@@ -19,7 +19,7 @@ namespace QuanLyNhanVien
     /// </summary>
     public partial class QuanLyTaiKhoan_Main : Window
     {
-        QLNhanVienEntities db = new QLNhanVienEntities();
+        QuanLyNhanVien.QLNhanVienEntities2 db = new QuanLyNhanVien.QLNhanVienEntities2();
 
         public class TaiKhoanView
         {

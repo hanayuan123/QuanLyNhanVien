@@ -20,7 +20,7 @@ namespace QuanLyNhanVien
     public partial class QuanLyTaiKhoan_Sua : UserControl
     {
         public event Action OnSaved;
-        private QLNhanVienEntities db = new QLNhanVienEntities();
+        private QuanLyNhanVien.QLNhanVienEntities2 db = new QuanLyNhanVien.QLNhanVienEntities2();
         private int _id;
         public QuanLyTaiKhoan_Sua(int id)
         {

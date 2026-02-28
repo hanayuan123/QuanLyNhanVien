@@ -41,6 +41,11 @@ namespace QuanLyNhanVien
             LoadWindowContent(new QuanLyPhongBan());
         }
 
+        private void BtnQuanLyNhanVien_Click(object sender, RoutedEventArgs e)
+        {
+            LoadWindowContent(new dashboard());
+        }
+
         private void LoadWindowContent(Window childWindow)
         {
             var content = childWindow.Content as UIElement;

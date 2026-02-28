@@ -5,10 +5,65 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:local="clr-namespace:QuanLyNhanVien"
              mc:Ignorable="d">
-    <Grid>
-        <DockPanel>
-            <GroupBox Margin="0" Header="Chỉnh sửa">
-                <Grid Margin="5">
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#1F2937"/>
+            <Setter Property="Margin" Value="0,0,10,8"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="34"/>
+            <Setter Property="Background" Value="#F1F5F9"/>
+            <Setter Property="BorderBrush" Value="#DCE3EA"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="10,4"/>
+            <Setter Property="Margin" Value="5,0,5,8"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="8">
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                          Margin="{TemplateBinding Padding}"
+                                          VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="SoftBlueButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="34"/>
+            <Setter Property="Background" Value="#5AA9FF"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="BtnBorder" Background="{TemplateBinding Background}" CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="BtnBorder" Property="Background" Value="#79BBFF"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="BtnBorder" Property="Background" Value="#4A9AF5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Grid Background="#F9FAFB">
+        <Border Background="White" CornerRadius="12" BorderBrush="#E5E7EB" BorderThickness="1" Padding="10">
+            <DockPanel>
+                <GroupBox Margin="0" Header="Chỉnh sửa" BorderBrush="#E5E7EB" Padding="10">
+                <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="*"/>
@@ -39,12 +94,13 @@
                     <TextBox x:Name="txtEmail" Margin="5" Grid.Column="1" Grid.Row="4"/>
                     <TextBox x:Name="txtSDT" Margin="5" Grid.Column="1" Grid.Row="5"/>
                     <StackPanel Grid.Column="1" Grid.Row="6" Orientation="Horizontal" Margin="5">
-                        <Button Content="Lưu" Width="100" Height="30" Margin="0" Background="#0078D7" Foreground="White" Click="BtnLuu_Click"/>
-                        <Button Content="Xóa" Width="100" Height="30" Margin="100,0,0,0" Background="#0078D7" Foreground="White" Click="BtnXoaForm_Click"/>
-                        <Button Content="Quay lại" Width="100" Height="30" Margin="10,0,0,0" Click="BtnQuayLai_Click"/>
+                        <Button Content="Lưu" Style="{StaticResource SoftBlueButtonStyle}" Margin="0" Click="BtnLuu_Click"/>
+                        <Button Content="Xóa" Style="{StaticResource SoftBlueButtonStyle}" Margin="10,0,0,0" Click="BtnXoaForm_Click"/>
+                        <Button Content="Quay lại" Width="100" Height="34" Margin="10,0,0,0" BorderBrush="#DCE3EA" BorderThickness="1" Background="#F1F5F9" Foreground="#1F2937" FontWeight="SemiBold" Click="BtnQuayLai_Click"/>
                     </StackPanel>
                 </Grid>
             </GroupBox>
-        </DockPanel>
+            </DockPanel>
+        </Border>
     </Grid>
 </UserControl>

@@ -63,11 +63,13 @@
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
                             <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
                         </Grid.ColumnDefinitions>
 
                         <Button Grid.Column="0" Content="Vị trí phòng ban" Style="{StaticResource HeaderButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnViTriPhongBan_Click"/>
                         <Button Grid.Column="1" Content="Quản lý tài khoản" Style="{StaticResource HeaderButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnQuanLyTaiKhoan_Click"/>
                         <Button Grid.Column="2" Content="Quản lý phòng ban" Style="{StaticResource HeaderButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnQuanLyPhongBan_Click"/>
+                        <Button Grid.Column="3" Content="Quản lý nhân viên" Style="{StaticResource HeaderButtonStyle}" HorizontalAlignment="Center" VerticalAlignment="Center" Click="BtnQuanLyNhanVien_Click"/>
                     </Grid>
                 </Border>
 

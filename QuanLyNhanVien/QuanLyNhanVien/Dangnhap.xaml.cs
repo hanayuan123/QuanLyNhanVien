@@ -19,9 +19,25 @@ namespace QuanLyNhanVien
     /// </summary>
     public partial class Dangnhap : Window
     {
+        private const string DemoUsername = "123456";
+        private const string DemoPassword = "123456";
+
         public Dangnhap()
         {
             InitializeComponent();
+        }
+
+        private void Login_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtUser.Text == DemoUsername && txtPass.Password == DemoPassword)
+            {
+                var mainWindow = new MainWindow();
+                mainWindow.Show();
+                Close();
+                return;
+            }
+
+            MessageBox.Show("Sai tài khoản hoặc mật khẩu.", "Đăng nhập", MessageBoxButton.OK, MessageBoxImage.Warning);
         }
     }
 }

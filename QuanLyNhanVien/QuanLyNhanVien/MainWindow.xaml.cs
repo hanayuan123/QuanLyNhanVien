@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,46 @@ namespace QuanLyNhanVien
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void BtnViTriPhongBan_Click(object sender, RoutedEventArgs e)
+        {
+            LoadWindowContent(new ViTriPhongBanWindow());
+        }
+
+        private void BtnQuanLyTaiKhoan_Click(object sender, RoutedEventArgs e)
+        {
+            LoadWindowContent(new QuanLyTaiKhoan_Main());
+        }
+
+        private void BtnQuanLyPhongBan_Click(object sender, RoutedEventArgs e)
+        {
+            LoadWindowContent(new QuanLyPhongBan());
+        }
+
+        private void LoadWindowContent(Window childWindow)
+        {
+            var content = childWindow.Content as UIElement;
+
+            if (content == null)
+            {
+                return;
+            }
+
+            MainContent.Resources = new ResourceDictionary();
+
+            foreach (DictionaryEntry resource in childWindow.Resources)
+            {
+                MainContent.Resources[resource.Key] = resource.Value;
+            }
+
+            foreach (var mergedDictionary in childWindow.Resources.MergedDictionaries)
+            {
+                MainContent.Resources.MergedDictionaries.Add(mergedDictionary);
+            }
+
+            childWindow.Content = null;
+            MainContent.Content = content;
         }
     }
 }

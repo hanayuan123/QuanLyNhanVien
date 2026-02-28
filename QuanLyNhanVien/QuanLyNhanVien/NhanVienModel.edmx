@@ -318,7 +318,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="QLNhanVienEntities2" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="QLNhanVienEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="ChucVus" EntityType="Self.ChucVu" />
           <EntitySet Name="Luongs" EntityType="Self.Luong" />
           <EntitySet Name="NhanViens" EntityType="Self.NhanVien" />
@@ -355,7 +355,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="QLNhanVienModelStoreContainer" CdmEntityContainer="QLNhanVienEntities2">
+        <EntityContainerMapping StorageEntityContainer="QLNhanVienModelStoreContainer" CdmEntityContainer="QLNhanVienEntities">
           <EntitySetMapping Name="ChucVus">
             <EntityTypeMapping TypeName="QLNhanVienModel.ChucVu">
               <MappingFragment StoreEntitySet="ChucVu">

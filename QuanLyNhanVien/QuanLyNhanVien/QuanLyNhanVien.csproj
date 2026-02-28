@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -106,6 +106,9 @@
     <Compile Include="PhongBan.cs">
       <DependentUpon>NhanVienModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="QuanLyPhongBan.xaml.cs">
+      <DependentUpon>QuanLyPhongBan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyTaiKhoan_Main.xaml.cs">
       <DependentUpon>QuanLyTaiKhoan_Main.xaml</DependentUpon>
     </Compile>
@@ -164,6 +167,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="QuanLyPhongBan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="QuanLyTaiKhoan_Main.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -226,13 +233,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>NhanVienModel.edmx</DependentUpon>
       <LastGenOutput>NhanVienModel.cs</LastGenOutput>
-    </Content>
-    <Content Include="QLNhanVien.mdf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="QLNhanVien_log.ldf">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-      <DependentUpon>QLNhanVien.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

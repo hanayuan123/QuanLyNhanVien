@@ -13,10 +13,10 @@ namespace QuanLyNhanVien
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class QLNhanVienEntities2 : DbContext
+    public partial class QLNhanVienEntities : DbContext
     {
-        public QLNhanVienEntities2()
-            : base("name=QLNhanVienEntities2")
+        public QLNhanVienEntities()
+            : base("name=QLNhanVienEntities")
         {
         }
     

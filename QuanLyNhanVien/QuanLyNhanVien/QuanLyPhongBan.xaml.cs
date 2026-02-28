@@ -7,7 +7,7 @@ namespace QuanLyNhanVien
     public partial class QuanLyPhongBan : Window
     {
         // ⚠️ Dùng đúng tên DbContext của bạn
-        QLNhanVienEntities2 db = new QLNhanVienEntities2();
+        QLNhanVienEntities db = new QLNhanVienEntities();
 
         public QuanLyPhongBan()
         {

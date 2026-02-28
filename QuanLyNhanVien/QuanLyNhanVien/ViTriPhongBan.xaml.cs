@@ -16,7 +16,7 @@ namespace QuanLyNhanVien
 {
     public partial class ViTriPhongBanWindow : Window
     {
-        QLNhanVienEntities2 db = new QLNhanVienEntities2();
+        QLNhanVienEntities db = new QLNhanVienEntities();
 
         public ViTriPhongBanWindow()
         {

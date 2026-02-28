@@ -28,7 +28,13 @@
             <Button Content="Xóa" Width="80" Margin="5"/>
         </StackPanel>
 
-        <DataGrid x:Name="dgViTri" Grid.Row="4" AutoGenerateColumns="True"/>
+        <DataGrid x:Name="dgViTri" Grid.Row="4" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Mã VT" Binding="{Binding MaVT}" Width="*"/>
+                <DataGridTextColumn Header="Tên VT" Binding="{Binding TenVT}" Width="*"/>
+                <DataGridTextColumn Header="Mã PB" Binding="{Binding MaPB}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
 
     </Grid>
 </Window>

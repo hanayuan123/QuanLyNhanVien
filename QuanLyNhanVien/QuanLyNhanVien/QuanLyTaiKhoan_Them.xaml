@@ -31,7 +31,7 @@
         <TextBox x:Name="RoleBox" Grid.Row="2" Grid.Column="1"/>
 
         <TextBlock Text="Mã NV:" Grid.Row="3"/>
-        <TextBox x:Name="ManvBox" Grid.Row="3" Grid.Column="1"/>
+        <ComboBox x:Name="ManvBox" Grid.Row="3" Grid.Column="1"/>
 
         <Button Content="Lưu"
                 Grid.Row="4"

@@ -88,11 +88,7 @@
     <Compile Include="NhanVien.cs">
       <DependentUpon>NhanVienModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="NhanVienModel.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>NhanVienModel.Context.tt</DependentUpon>
-    </Compile>
+    <Compile Include="NhanVienModel.Context.cs" />
     <Compile Include="NhanVienModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -233,6 +229,13 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>NhanVienModel.edmx</DependentUpon>
       <LastGenOutput>NhanVienModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLNhanVien.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="QLNhanVien_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>QLNhanVien.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>

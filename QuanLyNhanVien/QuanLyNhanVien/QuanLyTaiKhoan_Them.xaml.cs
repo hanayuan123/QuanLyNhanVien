@@ -20,36 +20,43 @@ namespace QuanLyNhanVien
     public partial class QuanLyTaiKhoan_Them : UserControl
     {
         public event Action OnSaved;
-        private QuanLyNhanVien.QLNhanVienEntities2 db = new QuanLyNhanVien.QLNhanVienEntities2();
+        private QuanLyNhanVien.QLNhanVienEntities db = new QuanLyNhanVien.QLNhanVienEntities();
         public QuanLyTaiKhoan_Them()
         {
             InitializeComponent();
+            LoadNhanVien();
+        }
+
+        private void LoadNhanVien()
+        {
+            ManvBox.ItemsSource = db.NhanViens.Select(nv => nv.MaNV).ToList();
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
         {
             // Kiểm tra dữ liệu cơ bản
             if (string.IsNullOrWhiteSpace(UsernameBox.Text) ||
-                string.IsNullOrWhiteSpace(PasswordBox.Password))
+                string.IsNullOrWhiteSpace(PasswordBox.Password) ||
+                ManvBox.SelectedItem == null)
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin!");
                 return;
             }
+
+            string maNV = ManvBox.SelectedItem.ToString();
 
             TaiKhoan tk = new TaiKhoan
             {
                 Username = UsernameBox.Text,
                 Password = PasswordBox.Password,
                 Role = RoleBox.Text,
-                MaNV = ManvBox.Text
+                MaNV = maNV
             };
 
             db.TaiKhoans.Add(tk);
             db.SaveChanges();
 
             MessageBox.Show("Thêm tài khoản thành công!");
-
-            MessageBox.Show("Thêm thành công!");
 
             OnSaved?.Invoke();   // báo về Main
         }

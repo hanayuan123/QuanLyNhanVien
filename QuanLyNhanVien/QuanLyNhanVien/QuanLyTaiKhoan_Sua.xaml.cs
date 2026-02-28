@@ -20,13 +20,19 @@ namespace QuanLyNhanVien
     public partial class QuanLyTaiKhoan_Sua : UserControl
     {
         public event Action OnSaved;
-        private QuanLyNhanVien.QLNhanVienEntities2 db = new QuanLyNhanVien.QLNhanVienEntities2();
+        private QuanLyNhanVien.QLNhanVienEntities db = new QuanLyNhanVien.QLNhanVienEntities();
         private int _id;
         public QuanLyTaiKhoan_Sua(int id)
         {
             InitializeComponent();
             _id = id;
+            LoadNhanVien();
             LoadData();
+        }
+
+        private void LoadNhanVien()
+        {
+            ManvBox.ItemsSource = db.NhanViens.Select(nv => nv.MaNV).ToList();
         }
 
         private void LoadData()
@@ -39,7 +45,7 @@ namespace QuanLyNhanVien
                 UsernameBox.Text = tk.Username;
                 PasswordBox.Password = tk.Password;
                 RoleBox.Text = tk.Role;
-                ManvBox.Text = tk.MaNV;
+                ManvBox.SelectedItem = tk.MaNV;
             }
         }
         private void Save_Click(object sender, RoutedEventArgs e)
@@ -51,7 +57,7 @@ namespace QuanLyNhanVien
                 tk.Username = UsernameBox.Text;
                 tk.Password = PasswordBox.Password;
                 tk.Role = RoleBox.Text;
-                tk.MaNV = ManvBox.Text;
+                tk.MaNV = ManvBox.SelectedItem?.ToString();
 
                 db.SaveChanges();
 
